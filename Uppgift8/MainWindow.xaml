@@ -1,0 +1,20 @@
+﻿<Window x:Class="Uppgift8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift8"
+        mc:Ignorable="d"
+        Title="Gringotts bank" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnKonvertera" Content="Konvertera" HorizontalAlignment="Left" Margin="209,323,0,0" VerticalAlignment="Top" Height="22" Width="60" Click="btnKonvertera_Click"/>
+        <TextBox x:Name="txtGalleoner" HorizontalAlignment="Left" Margin="209,152,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSiklar" HorizontalAlignment="Left" Margin="209,217,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtKnutingar" HorizontalAlignment="Left" Margin="209,279,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblGalleoner" Content="Galleoner" HorizontalAlignment="Left" Margin="209,121,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSiklar" Content="Siklar" HorizontalAlignment="Left" Margin="209,186,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblKnutingar" Content="Knutingar" HorizontalAlignment="Left" Margin="211,253,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblResultat" Content="0 SEK" HorizontalAlignment="Left" Margin="306,321,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

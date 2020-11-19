@@ -1,0 +1,28 @@
+﻿<Window x:Class="Uppgift5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift5"
+        mc:Ignorable="d"
+        Title="1+1=3" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.515,0.498">
+        <TextBox x:Name="txtBox1" TextWrapping="Wrap" Margin="414,135,337,257"/>
+        <TextBox x:Name="txtBox2" TextWrapping="Wrap" Margin="414,182,337,208"/>
+        <TextBox x:Name="txtBox3" TextWrapping="Wrap" Margin="414,249,337,141"/>
+        <Button  x:Name="btnLikamed" Content="=" HorizontalAlignment="Left" Height="60" Margin="357,243,0,0" VerticalAlignment="Top" Width="43" FontSize="35" Click="btn_Click"/>
+        <Label x:Name="Plusknapp" Content="+" HorizontalAlignment="Left" Margin="360,0,0,0" VerticalAlignment="Center" FontSize="30"/>
+        <Button x:Name="btnClear" Content="Rensa" HorizontalAlignment="Left" Height="30" Margin="357,320,0,0" VerticalAlignment="Top" Width="43" Background="White" Click="btnClear_Click"/>
+        <Separator HorizontalAlignment="Left" Margin="344,226,0,0" VerticalAlignment="Top" Height="18" RenderTransformOrigin="0.5,0.5" Width="134" FontSize="40">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+
+    </Grid>
+</Window>

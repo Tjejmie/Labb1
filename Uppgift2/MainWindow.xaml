@@ -1,0 +1,24 @@
+﻿<Window x:Class="Uppgift2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift2"
+        mc:Ignorable="d"
+        Title="Fyll i ditt namn" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Knappen" Content="Ok" HorizontalAlignment="Left" Margin="192,238,0,0" VerticalAlignment="Top" Height="37" Width="97" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.789"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="Namnet" Content="Namn" HorizontalAlignment="Left" Margin="192,128,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="192,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextChanged="TextBox_TextChanged" Height="29"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Uppgift6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="529" Width="875">
+    <Grid>
+        <Button x:Name="knappen" Content="Button" HorizontalAlignment="Left" Margin="291,295,0,0" VerticalAlignment="Top" Height="67" Width="216" Click="Button_Click"/>
+        <TextBox x:Name="txtDjur" HorizontalAlignment="Left" Margin="322,215,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="42"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="Uppgift10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift10"
+        mc:Ignorable="d"
+        Title="Gissa talet" Height="450" Width="800">
+    <Grid>
+        <Button IsEnabled="False" x:Name="btnGissa" Content="Gissa" HorizontalAlignment="Left" Margin="360,243,0,0" VerticalAlignment="Top" Height="29" Width="70" Click="btnGissa_Click"/>
+        <Button x:Name="btnSlumpa" Content="Slumpa tal" HorizontalAlignment="Left" Margin="463,198,0,0" VerticalAlignment="Top" Height="29" Width="70" Click="btnSlumpa_Click"/>
+        <TextBox x:Name="txtBoxTal" HorizontalAlignment="Left" Margin="326,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblGissning" Content="Gissning" HorizontalAlignment="Left" Margin="326,173,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="lblSvar" HorizontalAlignment="Left" Margin="256,295,0,0" VerticalAlignment="Top" Height="92" Width="336"/>
+        <Label x:Name="lblGissa" HorizontalAlignment="Left" Margin="197,152,0,0" VerticalAlignment="Top" Height="106" Width="111"/>
+
+    </Grid>
+</Window>
