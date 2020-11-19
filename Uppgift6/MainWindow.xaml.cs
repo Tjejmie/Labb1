@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Uppgift6s
+namespace Uppgift6
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -36,7 +36,6 @@ namespace Uppgift6s
 
             lblResultat.Content = "Differens";
             lblResultat.Content = "Resultat";
-
         }
 
         private void btnPlus_Click(object sender, RoutedEventArgs e)
@@ -52,9 +51,11 @@ namespace Uppgift6s
 
             lblResultat.Content = "Resultat";
             lblResultat.Content = "Differens";
+
+
+
             lblResultat.Content = "Resultat";
             lblResultat.Content = "Summa";
-
 
         }
 
@@ -86,7 +87,6 @@ namespace Uppgift6s
 
             lblResultat.Content = "Resultat";
             lblResultat.Content = "Produkt";
-
         }
 
         private void btnDelad_Click(object sender, RoutedEventArgs e)
