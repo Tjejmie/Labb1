@@ -26,13 +26,6 @@ namespace Uppgift2
            
         }
 
-       private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-      
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"Hej {txtName.Text}! Hoppas du mår bra");

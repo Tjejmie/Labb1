@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uppgift4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Lösenord" Height="450" Width="800">
     <Grid>
         <Button Content="Klicka här" Name="passwordBtn" HorizontalAlignment="Left" Margin="275,228,0,0" VerticalAlignment="Top" Height="88" Width="240" Click="passwordbtn_Click" FontSize="16" />
         <Label Content="Sesam öppna dig!" x:Name="passwordLabel" HorizontalAlignment="Left" Margin="308,164,0,0" VerticalAlignment="Top" Height="41" Width="174" FontSize="18" Visibility="Hidden"/>

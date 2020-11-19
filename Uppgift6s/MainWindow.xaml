@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uppgift6s"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Kalkylator" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnMinus" Content="-" Margin="322,178,420,198" Background="#FFA4F7FC" FontSize="30" Click="btnMinus_Click"/>
         <Button x:Name="btnGånger" Content="*" Margin="385,178,357,198" Background="#FFA4F7FC" FontSize="30" Click="btnGånger_Click"/>

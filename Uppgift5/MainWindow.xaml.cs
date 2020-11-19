@@ -28,25 +28,12 @@ namespace Uppgift5
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-
             int tal1 = 0;
             int tal2 = 0;
             tal1 = int.Parse(txtBox1.Text);
             tal2 = int.Parse(txtBox2.Text);
             int totalsum = tal1 + tal2;
-            txtBox3.Text = Convert.ToString(totalsum);
-
-
-
-            
-
-            
-
-
-
-
-
-            
+            txtBox3.Text = Convert.ToString(totalsum); 
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)

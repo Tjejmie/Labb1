@@ -24,43 +24,98 @@ namespace Uppgift15
         {
             InitializeComponent();
         }
-        string vowels = "aeiouyåäöAEIOUYÅÄÖ";
-        public bool isVowel(char character)
-        {
-            
-            
-            foreach (char vowel in vowels)
-            {
-                if (vowel == character)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        public int NumberOfVowels(string text)
-        {
-            int numberOf = 0;
-            foreach (char c in text)
-            {
-                if (isVowel(c))
-                {
-                    numberOf++;
-                }
-            }
-            return numberOf;
-        }
-
-        
+        int countVowels = 0;
 
         private void btnKnapp_Click(object sender, RoutedEventArgs e)
         {
-            string orginalText = txtBoxRotvälska.Text;
-
-            lblVokaler.Content = NumberOfVowels(orginalText);
+            string charInput = txtBoxRotvälska.Text;
+            int allThemVowels = NumberOfVowels(charInput);
+            lblVokaler.Content = countVowels.ToString();
+            txtBlockResultat.Text = Jibberish(txtBoxRotvälska.Text);
+            lblVokaler.Content = ($"Antal vokaler: {countVowels}");
         }
 
-        //public string Jibberish(string input)
+        public string Jibberish (string charInput)
+        {
+            string textTranslated = "";
+            foreach (char c in charInput)
+            {
+                bool lookatSmall = SmallVowel(c);
+                bool lookatBig = BigVowel(c);
+
+                if (lookatSmall == true)
+                {
+                    textTranslated += "ö";
+                }
+
+                else if (lookatBig == true)
+                {
+                    textTranslated += "Ö";
+                }
+                else
+                {
+                    textTranslated += c.ToString();
+                }
+            } return textTranslated;
+        }
+
+        public int NumberOfVowels (string charInput)
+            {
+                foreach (char letter in charInput)
+                {
+                    bool vowelIs = IsVowel(letter);
+                    if (vowelIs == true)
+                    {
+                    countVowels++;
+                    }
+                } return countVowels;
+            }
+
+        public bool SmallVowel (char character)
+        {
+            string smallVowels = "aouiyeåäö";
+            bool maybeVowelSmall = false;
+            foreach (char vow in smallVowels)
+            {
+                if (vow == character)
+                {
+                    maybeVowelSmall = true;
+                    break;
+                }
+            } return maybeVowelSmall;
+        }
+
+        public bool BigVowel (char character)
+        {
+            string bigVowels = "AOUIYEÅÄÖ";
+            bool maybeVowelBig = false;
+            foreach (char vow in bigVowels)
+            {
+                if (vow == character)
+                {
+                    maybeVowelBig = true;
+                    break;
+                }
+            } return maybeVowelBig;
+        }
+
+        private bool IsVowel (char character)
+        {
+            string allVowels = "aouiyeåäöAOUIYEÅÄÖ";
+            bool theVowel = false;
+
+            foreach (char vow in allVowels)
+            {
+                if (vow == character)
+                {
+                    theVowel = true;
+                    break;
+                }
+            } return theVowel;
+        }
+
+        
+        
+        
     }
 }

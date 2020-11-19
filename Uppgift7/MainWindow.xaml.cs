@@ -25,16 +25,13 @@ namespace Uppgift7
             InitializeComponent();
         }
 
-        private void btn_Click(object sender, RoutedEventArgs e)
+        private void btnBeräkna_Click(object sender, RoutedEventArgs e)
         {
-
             int tal1 = 0;
             int tal2 = 0;
-           
 
             int resultat;
 
-            
             tal1 = int.Parse(txtBox1.Text);
             tal2 = int.Parse(txtBox2.Text);
 
@@ -42,10 +39,7 @@ namespace Uppgift7
             txtBox3.Text = resultat.ToString();
 
             resultat = tal1 % tal2;
-            txtBox4.Text = resultat.ToString();            
-
-
-
+            txtBox4.Text = resultat.ToString();
         }
     }
 }

@@ -32,9 +32,6 @@ namespace Uppgift8
             double knutingar = double.Parse(txtKnutingar.Text);
             double resultat = (galleoner + (siklar / 17) + (knutingar / 493)) * 62.02;
             lblResultat.Content = Math.Round(resultat).ToString() + "SEK";
-
-
-
         }
 
      

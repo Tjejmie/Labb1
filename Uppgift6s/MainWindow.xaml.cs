@@ -41,10 +41,6 @@ namespace Uppgift6s
 
         private void btnPlus_Click(object sender, RoutedEventArgs e)
         {
-
-
-
-
             double tal1 = 0;
             double tal2 = 0;
 
@@ -56,9 +52,6 @@ namespace Uppgift6s
 
             lblResultat.Content = "Resultat";
             lblResultat.Content = "Differens";
-
-
-
             lblResultat.Content = "Resultat";
             lblResultat.Content = "Summa";
 

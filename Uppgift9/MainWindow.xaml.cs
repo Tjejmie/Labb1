@@ -68,7 +68,6 @@ namespace Uppgift9
                 {
                     lblResultat.Content = ($"Hej {namn}! Du är {ålder} år gammal och få se filmer med 7-årsgräns.");
                 }       
-            
             }
 
             else

@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Uppgift15"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Jibberish" Height="450" Width="800">
     <Grid>
-        <Label x:Name="lblRubrik" Content="Grundtext" HorizontalAlignment="Left" Margin="233,166,0,0" VerticalAlignment="Top"  />
+        <Label x:Name="lblRubrik" Content="Grundtext" HorizontalAlignment="Left" Margin="224,166,0,0" VerticalAlignment="Top" FontWeight="Bold"  />
         <Label x:Name="lblVokaler" HorizontalAlignment="Left" Margin="233,276,0,0" VerticalAlignment="Top" Height="26" Width="97"/>
-        <TextBox x:Name="txtBoxRotvälska" HorizontalAlignment="Left" Margin="233,192,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="70"/>
-        <Button x:Name="btnKnapp" Content="Konvertera till rotvälska" HorizontalAlignment="Left" Margin="400,192,0,0" VerticalAlignment="Top" Height="70" Width="107" Click="btnKnapp_Click"/>
-        <TextBlock x:Name="txtBlockResultat" HorizontalAlignment="Left" Margin="528,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="124"/>
+        <TextBox x:Name="txtBoxRotvälska" HorizontalAlignment="Left" Margin="185,192,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="70"/>
+        <Button x:Name="btnKnapp" Content="Konvertera till rotvälska" HorizontalAlignment="Left" Margin="350,192,0,0" VerticalAlignment="Top" Height="70" Width="127" Click="btnKnapp_Click"/>
+        <TextBlock x:Name="txtBlockResultat" HorizontalAlignment="Left" Margin="496,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="132"/>
+        <Label x:Name="lblRubrikRotvälska" Content="Rotvälska" HorizontalAlignment="Left" Margin="510,153,0,0" VerticalAlignment="Top" FontWeight="Bold"  />
 
     </Grid>
 </Window>
